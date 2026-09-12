@@ -238,6 +238,11 @@
       <geom name="plate" type="cylinder" size="0.08 0.01" rgba="1 1 1 1" mass="0.5"/>
     </body>
 
+    <body name="plate" pos="0 0 0.43">
+      <joint name="plate_joint" type="free"/>
+      <geom name="plate_geom" type="cylinder" size="0.08 0.01" rgba="1 1 1 1" mass="0.2"/>
+    </body>
+
     <camera name="overhead_cam" pos="0 -1.0 1.5" xyaxes="1 0 0 0 0.5 0.866"/>
 </worldbody>
 
