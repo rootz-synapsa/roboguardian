@@ -1,0 +1,14 @@
+{
+  "gate": "G1b",
+  "timestamp_utc": "2026-09-12T05:02:01.579830+00:00",
+  "dual_arm_loaded": true,
+  "left_actuator_verified": true,
+  "right_actuator_verified": true,
+  "left_delta_rad": 0.18768863565868285,
+  "right_delta_rad": 0.18768900479792286,
+  "camera_count": 1,
+  "target_object_readable": true,
+  "disturbance_detected": true,
+  "displacement_meters": 0.1,
+  "status": "PASS"
+}
