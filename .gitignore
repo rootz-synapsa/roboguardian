@@ -2,5 +2,7 @@ __pycache__/
 *.pyc
 .env
 .venv/
-results/*.json
 *.log
+
+# Keep gate evidence in git.
+# Ignore transient/raw artifacts later only if needed.

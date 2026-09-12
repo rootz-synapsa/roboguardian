@@ -1,0 +1,29 @@
+{
+  "gate": "G1a",
+  "timestamp_utc": "2026-09-12T04:20:08.583654+00:00",
+  "mujo_co_version": "3.13.0",
+  "openvino_version": "2026.3.1-22476-759c5a6ab8c-releases/2026/3",
+  "generic_mujoco_model_loaded": true,
+  "openvino_compiled": true,
+  "openvino_inference_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "object_pose_readable": true,
+  "initial_pose": [
+    0.5,
+    0.0,
+    0.05
+  ],
+  "displaced_pose": [
+    0.6,
+    0.0,
+    0.05
+  ],
+  "displacement_meters": 0.09999999999999998,
+  "displacement_detected": true,
+  "status": "PASS",
+  "note": "This verifies the base toolchain only. Dual SO-101 competition environment remains pending."
+}

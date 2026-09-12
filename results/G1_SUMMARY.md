@@ -1,34 +1,37 @@
-# G1 Environment Test Summary
+# G1 Environment Verification Summary
 
-**Date:** 2026-09-12  
-**Test Duration:** ~45 minutes  
-**Status:** PASS
+## Current status
 
-## Test Results
+- G0 OpenVINO smoke test: PASS
+- G0 MuJoCo smoke test: PASS
+- G1a Base Toolchain Integration: PASS
+- G1b Dual SO-101 Competition Environment: PENDING
 
-### G0: Challenge Sanity Check
-- ✅ OpenVINO toolchain functional
-- ✅ MuJoCo simulation functional
-- ✅ All smoke tests passed
+## Verified
 
-### G1: Environment Integration
-- ✅ MuJoCo environment loads correctly
-- ✅ OpenVINO inference executes
-- ✅ Object state readable from simulation
-- ✅ Programmatic disturbance works
-- ✅ Displacement detection functional
-- ✅ Evidence artifact generated
+- OpenVINO imports
+- OpenVINO model compiles on CPU
+- OpenVINO inference executes
+- MuJoCo imports
+- MuJoCo XML model loads
+- MuJoCo simulation advances
+- Object pose can be read
+- Object can be displaced programmatically
+- Python detects displacement
+- Machine-readable gate evidence is preserved
 
-## Evidence Artifacts
+## Not yet verified
 
-1. `results/g1_environment.json` — Complete test output
-2. `tests/test_openvino_smoke.py` — OpenVINO validation
-3. `tests/test_mujoco_smoke.py` — MuJoCo validation
-4. `tests/test_g1_environment.py` — Integration test
-5. `docs/G0_CHECK.md` — Challenge sanity documentation
+- Dual SO-101 MuJoCo model
+- Two-arm actuation
+- Competition camera configuration
+- Table-setting object scene
+- Actual competition manipulation environment
 
-## Next Steps
+## Gate decision
 
-**Gate Decision:** PASS → Proceed to G2 (Happy-Path Baseline)
+**G1a PASS**
 
-**Time Remaining:** ~67 hours (of 72-hour build window)
+**G1b PENDING**
+
+**G2 NOT AUTHORIZED until G1b passes.**
