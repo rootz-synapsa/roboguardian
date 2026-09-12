@@ -6,3 +6,5 @@ __pycache__/
 
 # Keep gate evidence in git.
 # Ignore transient/raw artifacts later only if needed.
+results/repair_log.txt
+vendor/
