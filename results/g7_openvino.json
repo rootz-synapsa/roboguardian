@@ -1,0 +1,31 @@
+{
+  "gate": "G7",
+  "environment": {
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "openvino_version": "2026.3.1-22476-759c5a6ab8c-releases/2026/3",
+    "onnxruntime_version": "1.30.0",
+    "device": "CPU"
+  },
+  "config": {
+    "onnx_model": "results/plate_detector.onnx",
+    "img_size": 128,
+    "warmup": 20,
+    "trials": 200
+  },
+  "baseline_onnxruntime_cpu": {
+    "p50_ms": 0.542332999430073,
+    "p95_ms": 3.9895159995467107,
+    "mean_ms": 1.1048980700070388,
+    "max_ms": 8.186479999494622
+  },
+  "openvino": {
+    "p50_ms": 1.2297519997446216,
+    "p95_ms": 2.6068454509186263,
+    "mean_ms": 1.4454309449683933,
+    "max_ms": 4.929800001264084
+  },
+  "speedup_p50_x": 0.441010056940503,
+  "claim_supported": false,
+  "claim": "OpenVINO is used to optimize perception inference."
+}

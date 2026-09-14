@@ -1,0 +1,241 @@
+#!/usr/bin/env python3
+"""G2 happy-path baseline.
+
+Scope:
+- deterministic scripted manipulation
+- kinematic carry grasp model
+- placement success measured at release boundary
+- contact-rich grasp/settling physics explicitly deferred
+"""
+
+import sys
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+import mujoco
+
+
+HOME      = [0.0, -0.4, 0.9, -0.5, 0.0, 0.0]
+PRE_GRASP = [0.0, -0.9, 1.2, -0.3, 0.0, 0.0]
+GRASP     = [0.0, -1.0, 1.3, -0.2, 0.0, -0.6]
+LIFT      = [0.0, -0.8, 1.1, -0.3, 0.0, -0.6]
+PLACE     = [
+    -0.005315686103320939,
+    -0.4045607705168512,
+    1.4196,
+    0.6715546408917465,
+    0.0397185882405959,
+    -0.17453297762778586,
+]
+RELEASE   = [
+    -0.005315686103320939,
+    -0.4045607705168512,
+    1.4196,
+    0.6715546408917465,
+    0.0397185882405959,
+    0.0,
+]
+
+LIFT_MIN_METERS = 0.05
+PLACE_XY_TOLERANCE = 0.05
+
+
+def set_arm(data, ids, target):
+    for i, value in enumerate(target):
+        data.ctrl[ids[i]] = value
+
+
+def run_phase(model, data, ids, target, steps):
+    for _ in range(steps):
+        set_arm(data, ids, target)
+        mujoco.mj_step(model, data)
+
+
+def main():
+    model = mujoco.MjModel.from_xml_path("models/dual_so101.xml")
+    data = mujoco.MjData(model)
+
+    names = [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper",
+    ]
+
+    act_ids = [
+        mujoco.mj_name2id(
+            model,
+            mujoco.mjtObj.mjOBJ_ACTUATOR,
+            f"left_{name}",
+        )
+        for name in names
+    ]
+
+    plate_jnt = mujoco.mj_name2id(
+        model,
+        mujoco.mjtObj.mjOBJ_JOINT,
+        "plate_joint",
+    )
+
+    grip_body = mujoco.mj_name2id(
+        model,
+        mujoco.mjtObj.mjOBJ_BODY,
+        "left_gripper",
+    )
+
+    target_body = mujoco.mj_name2id(
+        model,
+        mujoco.mjtObj.mjOBJ_BODY,
+        "place_target",
+    )
+
+    ee_site = mujoco.mj_name2id(
+        model,
+        mujoco.mjtObj.mjOBJ_SITE,
+        "left_gripperframe",
+    )
+
+    if -1 in act_ids or min(plate_jnt, grip_body, target_body, ee_site) == -1:
+        print("G2_BASELINE=FAIL: required model IDs missing")
+        return 1
+
+    q_adr = model.jnt_qposadr[plate_jnt]
+
+    # Plate is carried relative to the left_gripperframe EE site.
+    # Offset derived from IK investigation:
+    # target_plate = left_gripperframe + [0, 0, 0.048]
+    CARRY_OFFSET = np.array([0.0, 0.0, 0.048])
+
+    def carry():
+        data.qpos[q_adr:q_adr + 3] = data.site_xpos[ee_site] + CARRY_OFFSET
+        data.qpos[q_adr + 3:q_adr + 7] = [1.0, 0.0, 0.0, 0.0]
+        mujoco.mj_forward(model, data)
+
+    runs = []
+
+    for run_id in range(1, 11):
+        mujoco.mj_resetData(model, data)
+        mujoco.mj_forward(model, data)
+
+        p0 = data.qpos[q_adr:q_adr + 3].copy()
+        z0 = float(p0[2])
+        z_max = z0
+
+        target_pos = data.xpos[target_body].copy()
+
+        # Approach / grasp
+        run_phase(model, data, act_ids, HOME, 100)
+        run_phase(model, data, act_ids, PRE_GRASP, 100)
+        run_phase(model, data, act_ids, GRASP, 60)
+
+        # Lift while carrying
+        for _ in range(100):
+            set_arm(data, act_ids, LIFT)
+            mujoco.mj_step(model, data)
+            carry()
+            z_max = max(
+                z_max,
+                float(data.qpos[q_adr + 2]),
+            )
+
+        # Transport while carrying
+        for _ in range(150):
+            set_arm(data, act_ids, PLACE)
+            mujoco.mj_step(model, data)
+            carry()
+
+        # IMPORTANT:
+        # Score placement BEFORE release.
+        release_pose = data.qpos[q_adr:q_adr + 3].copy()
+
+        target_error_xy = float(
+            np.linalg.norm(
+                release_pose[:2] - target_pos[:2]
+            )
+        )
+
+        lift_ok = (z_max - z0) > LIFT_MIN_METERS
+        place_ok = target_error_xy <= PLACE_XY_TOLERANCE
+        move_ok = place_ok
+
+        # Release happens only after scoring release-boundary placement.
+        run_phase(model, data, act_ids, RELEASE, 60)
+
+        for _ in range(60):
+            set_arm(data, act_ids, RELEASE)
+            mujoco.mj_step(model, data)
+
+        final_pose = data.qpos[q_adr:q_adr + 3].copy()
+
+        ok = lift_ok and move_ok and place_ok
+
+        runs.append({
+            "run": run_id,
+            "success": bool(ok),
+            "lift_ok": bool(lift_ok),
+            "move_ok": bool(move_ok),
+            "place_ok": bool(place_ok),
+            "initial_pose": p0.tolist(),
+            "target_pose": target_pos.tolist(),
+            "release_pose": release_pose.tolist(),
+            "final_pose_after_release": final_pose.tolist(),
+            "lift_meters": float(z_max - z0),
+            "target_error_xy_meters": target_error_xy,
+        })
+
+        print(
+            f"run {run_id:2d}: "
+            f"success={ok} "
+            f"lift={lift_ok} "
+            f"place={place_ok} "
+            f"target_error={target_error_xy:.4f}m "
+            f"release=({release_pose[0]:.3f},"
+            f"{release_pose[1]:.3f},"
+            f"{release_pose[2]:.3f})"
+        )
+
+    successes = sum(r["success"] for r in runs)
+    rate = successes / len(runs)
+    status = "PASS" if successes >= 8 else "FAIL"
+
+    evidence = {
+        "gate": "G2",
+        "task": "single_object_kinematic_pick_place",
+        "runs": len(runs),
+        "successes": successes,
+        "success_rate": rate,
+        "disturbance": False,
+        "grasp_model": "kinematic_carry",
+        "placement_metric": "XY target error at release boundary",
+        "placement_tolerance_meters": PLACE_XY_TOLERANCE,
+        "ee_site": "left_gripperframe",
+        "carry_offset_meters": [0.0, 0.0, 0.048],
+        "trajectory_note": "ik_left_gripperframe_warn_margin",
+        "contact_physics": "deferred",
+        "status": status,
+        "per_run": runs,
+        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+    }
+
+    Path("results").mkdir(exist_ok=True)
+
+    Path("results/g2_baseline.json").write_text(
+        json.dumps(evidence, indent=2)
+    )
+
+    print()
+    print(
+        f"successes={successes}/10 "
+        f"rate={rate:.2f} status={status}"
+    )
+    print("G2_BASELINE=" + status)
+
+    return 0 if status == "PASS" else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

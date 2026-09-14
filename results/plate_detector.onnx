@@ -1,0 +1,408 @@
+
+pytorch
+2.14.0+cpu:˘ï
+„	
+image
+conv.0.weight
+conv.0.biasconv2dnode_conv2d"Conv*
+group†*
+pads@@@@†*
+auto_pad"NOTSET†*
+strides@@†*
+	dilations@@†*
+kernel_shape@@†Jí
+	namespaceÑ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.0: torch.nn.modules.conv.Conv2d/conv2d: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']J¥
+pkg.torch.onnx.fx_nodeô%conv2d : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%x, %p_conv_0_weight, %p_conv_0_bias, [2, 2], [1, 1]), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'conv', 'conv.0', 'conv2d']JÉ
+pkg.torch.onnx.stack_trace‰File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+ñ
+conv2drelu	node_relu"ReluJí
+	namespaceÑ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.1: torch.nn.modules.activation.ReLU/relu: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']JÉ
+pkg.torch.onnx.fx_nodei%relu : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d,), kwargs = {})J<
+pkg.torch.onnx.name_scopes['', 'conv', 'conv.1', 'relu']J˚
+pkg.torch.onnx.stack_trace‹File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+Ô	
+relu
+conv.2.weight
+conv.2.biasconv2d_1node_conv2d_1"Conv*
+group†*
+pads@@@@†*
+auto_pad"NOTSET†*
+strides@@†*
+	dilations@@†*
+kernel_shape@@†Jî
+	namespaceÜ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.2: torch.nn.modules.conv.Conv2d/conv2d_1: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']Jπ
+pkg.torch.onnx.fx_nodeû%conv2d_1 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu, %p_conv_2_weight, %p_conv_2_bias, [2, 2], [1, 1]), kwargs = {})J@
+pkg.torch.onnx.name_scopes"['', 'conv', 'conv.2', 'conv2d_1']JÉ
+pkg.torch.onnx.stack_trace‰File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+§
+conv2d_1relu_1node_relu_1"ReluJî
+	namespaceÜ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.3: torch.nn.modules.activation.ReLU/relu_1: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']Já
+pkg.torch.onnx.fx_nodem%relu_1 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d_1,), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'conv', 'conv.3', 'relu_1']J˚
+pkg.torch.onnx.stack_trace‹File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+Û	
+relu_1
+conv.4.weight
+conv.4.biasconv2d_2node_conv2d_2"Conv*
+group†*
+pads@@@@†*
+auto_pad"NOTSET†*
+strides@@†*
+	dilations@@†*
+kernel_shape@@†Jî
+	namespaceÜ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.4: torch.nn.modules.conv.Conv2d/conv2d_2: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']Jª
+pkg.torch.onnx.fx_node†%conv2d_2 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu_1, %p_conv_4_weight, %p_conv_4_bias, [2, 2], [1, 1]), kwargs = {})J@
+pkg.torch.onnx.name_scopes"['', 'conv', 'conv.4', 'conv2d_2']JÉ
+pkg.torch.onnx.stack_trace‰File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+§
+conv2d_2relu_2node_relu_2"ReluJî
+	namespaceÜ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.5: torch.nn.modules.activation.ReLU/relu_2: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']Já
+pkg.torch.onnx.fx_nodem%relu_2 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d_2,), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'conv', 'conv.5', 'relu_2']J˚
+pkg.torch.onnx.stack_trace‹File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+Û	
+relu_2
+conv.6.weight
+conv.6.biasconv2d_3node_conv2d_3"Conv*
+group†*
+pads@@@@†*
+auto_pad"NOTSET†*
+strides@@†*
+	dilations@@†*
+kernel_shape@@†Jî
+	namespaceÜ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.6: torch.nn.modules.conv.Conv2d/conv2d_3: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']Jª
+pkg.torch.onnx.fx_node†%conv2d_3 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu_2, %p_conv_6_weight, %p_conv_6_bias, [2, 2], [1, 1]), kwargs = {})J@
+pkg.torch.onnx.name_scopes"['', 'conv', 'conv.6', 'conv2d_3']JÉ
+pkg.torch.onnx.stack_trace‰File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+§
+conv2d_3relu_3node_relu_3"ReluJî
+	namespaceÜ: __main__.TinyDetector/conv: torch.nn.modules.container.Sequential/conv.7: torch.nn.modules.activation.ReLU/relu_3: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']Já
+pkg.torch.onnx.fx_nodem%relu_3 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d_3,), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'conv', 'conv.7', 'relu_3']J˚
+pkg.torch.onnx.stack_trace‹File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+∏
+relu_3
+val_3view	node_view"Reshape*
+	allowzero†Jé
+	namespaceÄ: __main__.TinyDetector/fc: torch.nn.modules.container.Sequential/fc.0: torch.nn.modules.flatten.Flatten/view: aten.view.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.flatten.Flatten', 'aten.view.default']Jç
+pkg.torch.onnx.fx_nodes%view : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%relu_3, [1, 2048]), kwargs = {})J8
+pkg.torch.onnx.name_scopes['', 'fc', 'fc.0', 'view']Jˇ
+pkg.torch.onnx.stack_trace‡File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/flatten.py", line 55, in forward
+    return input.flatten(self.start_dim, self.end_dim)
+ã	
+view
+fc.1.weight
+	fc.1.biaslinearnode_linear"Gemm*
+beta  Ä?†*
+transB†*
+alpha  Ä?†*
+transA †Jê
+	namespaceÇ: __main__.TinyDetector/fc: torch.nn.modules.container.Sequential/fc.1: torch.nn.modules.linear.Linear/linear: aten.linear.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.linear.Linear', 'aten.linear.default']J£
+pkg.torch.onnx.fx_nodeà%linear : [num_users=1] = call_function[target=torch.ops.aten.linear.default](args = (%view, %p_fc_1_weight, %p_fc_1_bias), kwargs = {})J:
+pkg.torch.onnx.name_scopes['', 'fc', 'fc.1', 'linear']J˚
+pkg.torch.onnx.stack_trace‹File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+ò
+linearrelu_4node_relu_4"ReluJê
+	namespaceÇ: __main__.TinyDetector/fc: torch.nn.modules.container.Sequential/fc.2: torch.nn.modules.activation.ReLU/relu_4: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']JÖ
+pkg.torch.onnx.fx_nodek%relu_4 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%linear,), kwargs = {})J:
+pkg.torch.onnx.name_scopes['', 'fc', 'fc.2', 'relu_4']J˚
+pkg.torch.onnx.stack_trace‹File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+û	
+relu_4
+fc.3.weight
+	fc.3.biasxy_normalizednode_linear_1"Gemm*
+beta  Ä?†*
+transB†*
+alpha  Ä?†*
+transA †Jí
+	namespaceÑ: __main__.TinyDetector/fc: torch.nn.modules.container.Sequential/fc.3: torch.nn.modules.linear.Linear/linear_1: aten.linear.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.TinyDetector', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.linear.Linear', 'aten.linear.default']Jß
+pkg.torch.onnx.fx_nodeå%linear_1 : [num_users=1] = call_function[target=torch.ops.aten.linear.default](args = (%relu_4, %p_fc_3_weight, %p_fc_3_bias), kwargs = {})J<
+pkg.torch.onnx.name_scopes['', 'fc', 'fc.3', 'linear_1']J˚
+pkg.torch.onnx.stack_trace‹File "/home/chuensuang/Projects/roboguardian/perception/train_detector.py", line 78, in forward
+    return self.fc(self.conv(x))
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/home/chuensuang/Projects/roboguardian/.venv/lib64/python3.14/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+main_graph*_Bconv.0.weightj$
+locationplate_detector.onnx.dataj
+offset512j
+length864p*3Bconv.0.biasJ 2v%æÏú)>.«Ω∂ƒ;hã5>≥a´=I^†ΩjõG>*aBconv.2.weightj$
+locationplate_detector.onnx.dataj
+offset1376j
+length4608p*SBconv.2.biasJ@4©ƒºKD=û¡=	üΩ#(l=≈pâ=-πΩ·ˇ¥=ºÀˆË=[Ûà= ≤uΩß s=!$ΩçWºÈ∆=*b Bconv.4.weightj$
+locationplate_detector.onnx.dataj
+offset5984j
+length18432p*î Bconv.4.biasJÄ”ÿ5=|kìΩs%W=º9¿ºÿ…Gº+nm=$o=S1ØΩVú=Ò⁄8=qqÇºk≤R=•Yû;Ï"=AÎ<hêeª›;<ΩõflΩTâπª°Ó&=r◊9=ÄêYΩÈ®=‚
+Ω∑"∏=¯uõ<NôóΩÀ˝<m*¢Ωíœ`= ò∏î.¢=*c  Bconv.6.weightj$
+locationplate_detector.onnx.dataj
+offset24416j
+length36864p*î Bconv.6.biasJÄı·<€>y=9=Ä`Ωø√=ëÙ˝;Fúº2Dƒºñ◊=ΩFtOΩ˛|WΩì =ÜÛqºJ.„º»¸—ªsS5=Á≈HΩ¸@=¿€=(∞Q=øÛª◊ô^=Œg<ã™<ñ*ÅΩälÄ<qzÆ<8c<ΩÄó;Lû<–¡~ºgMΩ*_@ÄBfc.1.weightj$
+locationplate_detector.onnx.dataj
+offset61280j
+length524288p*í@B	fc.1.biasJÄ?íËºü—«<¿A∞:ºJ;ÄÃV<c+”ª¯⁄º™€éºÂåºè©∆ºJ#ª5_<—Evº@˛”ºØE›º¶Oíº˝‹#;D5æªﬂ≈ªí“Æ<Ÿ:<~∂=º«µC<@,πºYZô:+ ≥<Å%Ωº∆<Ìë&º_dºú™≈ªK~·ªg±û<À;ı∫’ÁªËﬂ[ª}4–;&≤<çm
+=«ÿ;âö√<◊äºWE/º˝…∞<¬‘º∞fºrÉª`‡◊ºUeﬁ∫Põª‘>¨ºªÒºŒ_Ä<Æî±ºpÙÃº<•âÜ<Æg¯<jµ∑;7Üáº=Gô<b<«÷ïº|Ü\;*W@Bfc.3.weightj$
+locationplate_detector.onnx.dataj
+offset0j
+length512p*B	fc.3.biasJÕÍlΩáö=*Bval_3J              Z«
+image
+
+
+
+Ä
+Ä"=
+/pkg.torch.export.graph_signature.InputSpec.kind
+USER_INPUT"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"&
+!pkg.torch.onnx.original_node_namexbè
+xy_normalized
+
+
+"?
+0pkg.torch.export.graph_signature.OutputSpec.kindUSER_OUTPUT"-
+!pkg.torch.onnx.original_node_namelinear_1j⁄
+conv.0.weight
+
+
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_conv_0_weightj 
+conv.0.bias
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_conv_0_biasj⁄
+conv.2.weight
+
+
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_conv_2_weightj 
+conv.2.bias
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_conv_2_biasj⁄
+conv.4.weight
+
+ 
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_conv_4_weightj 
+conv.4.bias
+
+
+ "<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_conv_4_biasj⁄
+conv.6.weight
+
+ 
+ 
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_conv_6_weightj 
+conv.6.bias
+
+
+ "<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_conv_6_biasjœ
+fc.1.weight
+	
+@
+Ä"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_fc_1_weightj∆
+	fc.1.bias
+
+
+@"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"0
+!pkg.torch.onnx.original_node_namep_fc_1_biasjŒ
+fc.3.weight
+
+
+@"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_fc_3_weightj∆
+	fc.3.bias
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"0
+!pkg.torch.onnx.original_node_namep_fc_3_biasjO
+val_3
+
+
+":
+$pkg.onnxscript.optimizer.folded_from['val_1', 'val_2']j 
+conv2d
+
+
+
+@
+@j
+relu
+
+
+
+@
+@j"
+conv2d_1
+
+
+
+ 
+ j 
+relu_1
+
+
+
+ 
+ j"
+conv2d_2
+
+
+ 
+
+j 
+relu_2
+
+
+ 
+
+j"
+conv2d_3
+
+
+ 
+
+j 
+relu_3
+
+
+ 
+
+j
+view
+	
+
+Äj
+linear
+
+
+@j
+relu_4
+
+
+@Çû
+0pkg.torch.export.ExportedProgram.graph_signatureÈ
+# inputs
+p_conv_0_weight: PARAMETER target='conv.0.weight'
+p_conv_0_bias: PARAMETER target='conv.0.bias'
+p_conv_2_weight: PARAMETER target='conv.2.weight'
+p_conv_2_bias: PARAMETER target='conv.2.bias'
+p_conv_4_weight: PARAMETER target='conv.4.weight'
+p_conv_4_bias: PARAMETER target='conv.4.bias'
+p_conv_6_weight: PARAMETER target='conv.6.weight'
+p_conv_6_bias: PARAMETER target='conv.6.bias'
+p_fc_1_weight: PARAMETER target='fc.1.weight'
+p_fc_1_bias: PARAMETER target='fc.1.bias'
+p_fc_3_weight: PARAMETER target='fc.3.weight'
+p_fc_3_bias: PARAMETER target='fc.3.bias'
+x: USER_INPUT
+
+# outputs
+linear_1: USER_OUTPUT
+Ç8
+2pkg.torch.export.ExportedProgram.range_constraints{}B
+ 

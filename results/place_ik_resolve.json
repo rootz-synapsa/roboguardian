@@ -1,0 +1,22 @@
+{
+  "converged": true,
+  "iterations_used": 13,
+  "final_position_error_m": 8.731458405544768e-05,
+  "goal_position": [
+    -0.2,
+    0.0,
+    0.43
+  ],
+  "achieved_position": [
+    -0.20003670652153566,
+    -6.315055338977171e-07,
+    0.43007922164518797
+  ],
+  "joint_solution_rad": {
+    "shoulder_pan": -0.0006804320050303823,
+    "shoulder_lift": -1.3891631147954893,
+    "elbow_flex": 1.3904820914261358,
+    "wrist_flex": 1.5105929073159952,
+    "wrist_roll": 0.003919435181484925
+  }
+}

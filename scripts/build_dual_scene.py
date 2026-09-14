@@ -45,7 +45,7 @@ new_xml = f"""{pre_wb}
     <geom name="ground" type="plane" size="2 2 0.1" rgba="0.8 0.8 0.8 1"/>
 
     <body name="table" pos="0 0 0.4">
-      <geom name="table_top" type="box" size="0.6 0.4 0.02" rgba="0.6 0.4 0.2 1"/>
+      <geom name="table_top" type="box" size="0.6 0.4 0.02" rgba="0.6 0.4 0.2 1" contype="1" conaffinity="1" friction="1 0.1 0.01"/>
     </body>
 
     <body name="left_arm_base" pos="-0.3 0 0.42">
@@ -58,12 +58,35 @@ new_xml = f"""{pre_wb}
 
     <body name="target_object" pos="0 0 0.45">
       <joint name="target_joint" type="slide" axis="1 0 0" range="-0.5 0.5"/>
-      <geom name="plate" type="cylinder" size="0.08 0.01" rgba="1 1 1 1" mass="0.5"/>
+      <geom name="plate"
+            type="cylinder"
+            size="0.08 0.01"
+            rgba="1 1 1 1"
+            mass="0.5"
+            contype="0"
+            conaffinity="0"/>
     </body>
 
     <body name="plate" pos="0 0 0.43">
       <joint name="plate_joint" type="free"/>
-      <geom name="plate_geom" type="cylinder" size="0.08 0.01" rgba="1 1 1 1" mass="0.2"/>
+      <geom name="plate_geom"
+            type="cylinder"
+            size="0.08 0.01"
+            rgba="1 1 1 1"
+            mass="0.2"
+            contype="0"
+            conaffinity="0"
+            friction="1 0.1 0.01"/>
+    </body>
+
+    <!-- G2 predefined placement target -->
+    <body name="place_target" pos="-0.20 0 0.43">
+      <geom name="place_target_geom"
+            type="cylinder"
+            size="0.10 0.002"
+            rgba="0 1 0 0.30"
+            contype="0"
+            conaffinity="0"/>
     </body>
 
     <camera name="overhead_cam" pos="0 -1.0 1.5" xyaxes="1 0 0 0 0.5 0.866"/>

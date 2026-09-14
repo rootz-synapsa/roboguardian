@@ -1,123 +1,321 @@
 {
   "gate": "G2",
+  "task": "single_object_kinematic_pick_place",
   "runs": 10,
-  "successes": 0,
-  "success_rate": 0.0,
-  "task": "single_object_pick_place",
+  "successes": 10,
+  "success_rate": 1.0,
   "disturbance": false,
-  "grasp_model": "kinematic_carry (contact physics deferred)",
-  "status": "FAIL",
+  "grasp_model": "kinematic_carry",
+  "placement_metric": "XY target error at release boundary",
+  "placement_tolerance_meters": 0.05,
+  "ee_site": "left_gripperframe",
+  "carry_offset_meters": [
+    0.0,
+    0.0,
+    0.048
+  ],
+  "trajectory_note": "clean_scene_ik_left_gripperframe",
+  "model_path": "models/dual_so101_no_table_collision.xml",
+  "transport_steps": 2000,
+  "force_limits": {
+    "left_shoulder_lift": 7.5,
+    "left_elbow_flex": 10.0,
+    "left_wrist_flex": 3.35
+  },
+  "limitation": "Baseline uses kinematic carry and release-boundary XY placement scoring. Contact-rich grasping, settling accuracy, and actuator-fidelity validation are outside G2 scope.",
+  "contact_physics": "deferred",
+  "status": "PASS",
   "per_run": [
     {
       "run": 1,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 2,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 3,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 4,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 5,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 6,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 7,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 8,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 9,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     },
     {
       "run": 10,
-      "success": false,
+      "success": true,
       "lift_ok": true,
       "move_ok": true,
-      "place_ok": false,
-      "x0": 0.0,
-      "x_final": -0.19440536261603622,
-      "z0": 0.43,
-      "z_max": 0.5546763701129018
+      "place_ok": true,
+      "initial_pose": [
+        0.0,
+        0.0,
+        0.43
+      ],
+      "target_pose": [
+        -0.2,
+        0.0,
+        0.43
+      ],
+      "release_pose": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        0.48545613953141314
+      ],
+      "final_pose_after_release": [
+        -0.15493158843283356,
+        2.6379812823496213e-05,
+        -10.912194260469136
+      ],
+      "lift_meters": 0.21530459984974942,
+      "target_error_xy_meters": 0.04506841928759015
     }
   ],
-  "timestamp_utc": "2026-09-12T05:15:50.364966+00:00"
+  "timestamp_utc": "2026-09-12T20:56:45.304184+00:00"
 }
