@@ -1,9 +1,9 @@
 # RoboGuardian — Final Report
 
-> **"Governed AI is faster than ungoverned AI under uncertainty."**
+> **"Governed execution is more resilient than open-loop execution when the world changes."**
 >
-> A formal proof, via simulation, that a governed control loop with
-> observe → evaluate → re-plan semantics outperforms an open-loop
+> Controlled simulation evidence that a governed control loop with
+> observe → evaluate → re-plan semantics outperformed an open-loop
 > baseline when the world changes mid-execution.
 
 ---
@@ -19,7 +19,7 @@ control loop** built around three primitives:
    the stale plan
 
 Built on MuJoCo (simulation), OpenVINO (perception inference), and a
-6-DOF SO-101 arm manipulating a plate on a table.
+bimanual dual SO-101 simulation environment (experiments exercise the left arm manipulating a plate on a table).
 
 **Result:** across 10 trials per arm,
 
@@ -30,14 +30,14 @@ Built on MuJoCo (simulation), OpenVINO (perception inference), and a
 | **C** | Disturbance + RoboGuardian | **10 / 10** |
 
 The governed arm (C) recovers 100% of the time; the ungoverned arm (B)
-fails 100% of the time.
+fails 100% of the time (10 deterministic trials per arm).
 
 ---
 
 ## Core Thesis
 
 H0 (null): Governed control offers no advantage over open-loop.
-H1 (thesis): Governed control is strictly superior under uncertainty.
+H1 (thesis): Governed control is more resilient than open-loop control under uncertainty.
 
 **Evidence chain:**
 
@@ -51,7 +51,7 @@ H1 (thesis): Governed control is strictly superior under uncertainty.
 | G6 | A/B/C apples-to-apples comparison | A=10, B=0, C=10 ✅ |
 | G7 | Vision-based perception replaces ground truth | PASS (w/ limits) ✅ |
 
-**H0 rejected. H1 accepted.**
+**Result: the evidence supports H1 under the tested scenario. This is controlled simulation evidence, not a formal proof; no statistical test was performed (trials are deterministic re-runs).**
 
 ---
 
@@ -70,7 +70,7 @@ H1 (thesis): Governed control is strictly superior under uncertainty.
 | G6 | A/B/C apples-to-apples comparison | A=10, B=0, C=10 ✅ |
 | G7 | Vision-based perception replaces ground truth | PASS (w/ limits) ✅ |
 
-**H0 rejected. H1 accepted.**
+**Result: the evidence supports H1 under the tested scenario. This is controlled simulation evidence, not a formal proof; no statistical test was performed (trials are deterministic re-runs).**
 
 ---
 
@@ -295,10 +295,30 @@ Larger vision model — MobileNetV2-class to see if OpenVINO
 speedup materializes.
 Conclusion
 RoboGuardian demonstrates, with reproducible evidence, that a governed
-control loop with observe/evaluate/re-plan semantics strictly dominates
+control loop with observe/evaluate/re-plan semantics outperformed
 an open-loop baseline when the world changes mid-execution.
 The system is small (~146K params for vision, ~1K lines of Python),
 runs on CPU, and every claim is backed by a JSON artifact.
-Core thesis: PROVEN. ✅
+Core thesis: SUPPORTED by controlled simulation evidence. ✅
 Report generated: 2026-09-15
 Repository: ~/Projects/roboguardian
+
+
+## Scope of Validity
+
+All quantitative claims hold under the tested configuration only:
+single disturbance type (`object_move`, +0.10 m in X, fired at
+`before_grasp`), single place target, deterministic seeds
+(`noise_std=0`), kinematic carry grasping model, CPU execution, MuJoCo
+simulation. "10/10" expresses reproducibility of deterministic re-runs,
+not a statistical confidence interval.
+
+## Claim Revision Log
+
+| Date | Change | Reason |
+|---|---|---|
+| 2026-09-15 | "formal proof" -> "controlled simulation evidence" | Founder review: 10 deterministic trials cannot constitute a proof |
+| 2026-09-15 | "H0 rejected / H1 accepted" -> "supports H1 under tested scenario" | same as above |
+| 2026-09-15 | "strictly dominates" -> "outperformed" | same as above |
+| 2026-09-15 | thesis "faster" -> "more resilient" (README + FINAL_REPORT) | evidence measures success/recovery, not speed; G7 shows OpenVINO 0.44x |
+| 2026-09-15 | "6-DOF SO-101 arm" -> "bimanual dual SO-101 simulation" | match actual repo infrastructure and challenge framing |
