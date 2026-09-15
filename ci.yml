@@ -16,9 +16,8 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          # Match the interpreter used to generate requirements-lock.txt.
-          # Adjust this if your local .venv uses a different minor version.
-          python-version: "3.13"
+          # Matches the .venv used to generate requirements-lock.txt (python 3.14.7).
+          python-version: "3.14"
 
       - name: Install offscreen rendering deps (OSMesa, for MuJoCo headless render)
         run: |
