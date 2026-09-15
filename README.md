@@ -76,3 +76,7 @@ evidence under the tested scenario. Submission pack in docs/.
 - Video (2:40 ≤ 5:00): [presentation/roboguardian_pitch.mp4](presentation/roboguardian_pitch.mp4)
 - Slide deck (PDF): [presentation/RoboGuardian_Governed_Execution_Deck_v2.pdf](presentation/RoboGuardian_Governed_Execution_Deck_v2.pdf)
 - Slide frames + ffmpeg manifest: [presentation/slides/](presentation/slides/) + [presentation/slides_config.txt](presentation/slides_config.txt)
+
+## License
+
+MIT License — see [LICENSE](LICENSE).
