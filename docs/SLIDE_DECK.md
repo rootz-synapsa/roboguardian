@@ -21,3 +21,9 @@
     real hardware; repo + video links.
 
 Speaker-note rule: never say "faster", "proof", or "dominates".
+
+## Final Assets (2026-09-15)
+
+- Deck PDF: `presentation/RoboGuardian_Governed_Execution_Deck_v2.pdf`
+- Editable source: `presentation/RoboGuardian_Governed_Execution_Deck_v2.pptx`
+- Frames: `presentation/slides/`

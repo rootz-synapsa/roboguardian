@@ -17,3 +17,9 @@ Recording checklist:
 - [ ] Captions burned in for the killer-demo line
 - [ ] Voice-over recorded after screen capture (easier retakes)
 - [ ] Export 1080p30, ≤ 5:00 hard cut
+
+## Final Assets (2026-09-15)
+
+- Rendered video: `presentation/roboguardian_pitch.mp4` (2:40)
+- Source frames: `presentation/slides/slide-01.png` … `slide-10.png`
+- ffmpeg manifest: `presentation/slides_config.txt` (concat demuxer; last entry duplicated by design)

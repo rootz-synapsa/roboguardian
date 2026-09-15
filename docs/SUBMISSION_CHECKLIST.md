@@ -14,8 +14,8 @@
 - [ ] No secrets/tokens in repo (`git grep -i "token\|ghp_" || true`)
 
 ## Submission assets
-- [ ] Video ≤ 5:00 recorded per docs/VIDEO_OUTLINE.md, uploaded & linked in README
-- [ ] Slide deck built per docs/SLIDE_DECK.md (PDF exported)
+- [x] Video ≤ 5:00 recorded per docs/VIDEO_OUTLINE.md, uploaded & linked in README — evidence: presentation/roboguardian_pitch.mp4 (2:40 / ffprobe 160.44s), README 'Submission Assets (G8)' (verified 2026-09-15; platform upload at submission time)
+- [x] Slide deck built per docs/SLIDE_DECK.md (PDF exported) — evidence: presentation/RoboGuardian_Governed_Execution_Deck_v2.pdf (verified 2026-09-15)
 - [ ] Project description pasted into submission form (docs/PROJECT_DESCRIPTION.md)
 - [ ] Live-demo dry run completed per docs/DEMO_SCRIPT.md (timing ≤ 10 min)
 
