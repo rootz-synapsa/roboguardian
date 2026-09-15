@@ -1,0 +1,50 @@
+name: ci-smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci_smoke:
+    runs-on: ubuntu-latest
+    env:
+      MUJOCO_GL: osmesa
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          # Match the interpreter used to generate requirements-lock.txt.
+          # Adjust this if your local .venv uses a different minor version.
+          python-version: "3.13"
+
+      - name: Install offscreen rendering deps (OSMesa, for MuJoCo headless render)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libosmesa6-dev libgl1-mesa-dev libglfw3
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements-lock.txt ]; then
+            pip install -r requirements-lock.txt
+          else
+            pip install -r requirements.txt
+          fi
+
+      - name: Syntax check (fast fail before anything else)
+        run: python -m compileall .
+
+      - name: Unit + recovery invariant tests
+        run: pytest -q
+
+      - name: G1 environment & toolchain smoke test
+        run: python experiments/g1_check.py --model models/dual_so101_g3.xml
+
+      # Deliberately NOT running here (per the hardening plan): full G6
+      # reliability (30+ trials), G8 robustness matrix (80-90 runs), or
+      # any OpenVINO benchmark requiring stable timing measurement on a
+      # shared CI runner. Those are run locally / on demand and their
+      # results are committed as evidence artifacts under results/.
