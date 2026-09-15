@@ -1,0 +1,381 @@
+{
+  "gate": "G8-H2",
+  "config": {
+    "model": "models/dual_so101_g3.xml",
+    "trigger": "before_grasp",
+    "delta": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "seed": 42,
+    "n_trials": 20
+  },
+  "n_trials_with_no_recovery_needed": 0,
+  "trials": [
+    {
+      "trial_index": 0,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.09107100049732253,
+      "initial_evaluation_ms": 0.008816998160909861,
+      "observe_to_decision_ms": 0.09988799865823239,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.08853899998939596,
+        "recovery_evaluation_ms": 0.010159001249121502,
+        "replan_ms": 10.369911997258896,
+        "execution_ms": 10.32377099909354,
+        "recovery_total_ms": 20.974669998395257
+      }
+    },
+    {
+      "trial_index": 1,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.054771000577602535,
+      "initial_evaluation_ms": 0.004534998879535124,
+      "observe_to_decision_ms": 0.05930599945713766,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.0726649996067863,
+        "recovery_evaluation_ms": 0.006614998710574582,
+        "replan_ms": 9.687315003247932,
+        "execution_ms": 10.228438000922324,
+        "recovery_total_ms": 20.149832998868078
+      }
+    },
+    {
+      "trial_index": 2,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.07146300049498677,
+      "initial_evaluation_ms": 0.004354002157924697,
+      "observe_to_decision_ms": 0.07581700265291147,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06553899947903119,
+        "recovery_evaluation_ms": 0.021427000319818035,
+        "replan_ms": 8.921163997001713,
+        "execution_ms": 10.129608002898749,
+        "recovery_total_ms": 19.264642000052845
+      }
+    },
+    {
+      "trial_index": 3,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05365899778553285,
+      "initial_evaluation_ms": 0.0037800018617417663,
+      "observe_to_decision_ms": 0.05743899964727461,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.08333799996762536,
+        "recovery_evaluation_ms": 0.006485002813860774,
+        "replan_ms": 9.053212001163047,
+        "execution_ms": 10.399193997727707,
+        "recovery_total_ms": 19.71603400306776
+      }
+    },
+    {
+      "trial_index": 4,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.0569849980820436,
+      "initial_evaluation_ms": 0.003993001882918179,
+      "observe_to_decision_ms": 0.06097799996496178,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06272300015552901,
+        "recovery_evaluation_ms": 0.005683999916072935,
+        "replan_ms": 8.993733001261717,
+        "execution_ms": 10.358951003581751,
+        "recovery_total_ms": 19.564575999538647
+      }
+    },
+    {
+      "trial_index": 5,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05340200004866347,
+      "initial_evaluation_ms": 0.0039620026655029505,
+      "observe_to_decision_ms": 0.05736400271416642,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.0700939999660477,
+        "recovery_evaluation_ms": 0.006207003025338054,
+        "replan_ms": 9.035370003402932,
+        "execution_ms": 10.193479000008665,
+        "recovery_total_ms": 19.465751996904146
+      }
+    },
+    {
+      "trial_index": 6,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05676300133927725,
+      "initial_evaluation_ms": 0.0042100000428035855,
+      "observe_to_decision_ms": 0.06097300138208084,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06356599988066591,
+        "recovery_evaluation_ms": 0.005384001269703731,
+        "replan_ms": 8.910685999580892,
+        "execution_ms": 10.110690003784839,
+        "recovery_total_ms": 19.212641000194708
+      }
+    },
+    {
+      "trial_index": 7,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.06260699956328608,
+      "initial_evaluation_ms": 0.004579000233206898,
+      "observe_to_decision_ms": 0.06718599979649298,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06742500045220368,
+        "recovery_evaluation_ms": 0.006133999704616144,
+        "replan_ms": 9.067997001693584,
+        "execution_ms": 10.329860000638291,
+        "recovery_total_ms": 19.624526001280174
+      }
+    },
+    {
+      "trial_index": 8,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.06011999721522443,
+      "initial_evaluation_ms": 0.004363002517493442,
+      "observe_to_decision_ms": 0.06448299973271787,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06878999920445494,
+        "recovery_evaluation_ms": 0.005674002750311047,
+        "replan_ms": 8.977646997664124,
+        "execution_ms": 10.936462997051422,
+        "recovery_total_ms": 20.191972998873098
+      }
+    },
+    {
+      "trial_index": 9,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05690400212188251,
+      "initial_evaluation_ms": 0.004445999365998432,
+      "observe_to_decision_ms": 0.061350001487880945,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06340199979604222,
+        "recovery_evaluation_ms": 0.0053820003813598305,
+        "replan_ms": 9.160613000858575,
+        "execution_ms": 10.145362000912428,
+        "recovery_total_ms": 19.507224998960737
+      }
+    },
+    {
+      "trial_index": 10,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05759099803981371,
+      "initial_evaluation_ms": 0.004384000931167975,
+      "observe_to_decision_ms": 0.06197499897098169,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06340600157273002,
+        "recovery_evaluation_ms": 0.005494002834893763,
+        "replan_ms": 9.043082998687169,
+        "execution_ms": 10.164103001443436,
+        "recovery_total_ms": 19.40484900114825
+      }
+    },
+    {
+      "trial_index": 11,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.053486000979319215,
+      "initial_evaluation_ms": 0.004195000656181946,
+      "observe_to_decision_ms": 0.05768100163550116,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06617400140385143,
+        "recovery_evaluation_ms": 0.005802001396659762,
+        "replan_ms": 8.99487000060617,
+        "execution_ms": 10.163035996811232,
+        "recovery_total_ms": 19.381368001631927
+      }
+    },
+    {
+      "trial_index": 12,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.058224999520462006,
+      "initial_evaluation_ms": 0.00435399851994589,
+      "observe_to_decision_ms": 0.0625789980404079,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06347499947878532,
+        "recovery_evaluation_ms": 0.005681999027729034,
+        "replan_ms": 9.557363999192603,
+        "execution_ms": 10.117853998963255,
+        "recovery_total_ms": 19.87356199970236
+      }
+    },
+    {
+      "trial_index": 13,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05991299985907972,
+      "initial_evaluation_ms": 0.004579000233206898,
+      "observe_to_decision_ms": 0.06449200009228662,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06887199924676679,
+        "recovery_evaluation_ms": 0.00602900399826467,
+        "replan_ms": 9.103151001909282,
+        "execution_ms": 10.134390999155585,
+        "recovery_total_ms": 19.488581998302834
+      }
+    },
+    {
+      "trial_index": 14,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.07834099960746244,
+      "initial_evaluation_ms": 0.006155001756269485,
+      "observe_to_decision_ms": 0.08449600136373192,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.08135199823300354,
+        "recovery_evaluation_ms": 0.0076060023275204,
+        "replan_ms": 9.399029000633163,
+        "execution_ms": 10.27504699959536,
+        "recovery_total_ms": 19.928677000280004
+      }
+    },
+    {
+      "trial_index": 15,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.061756996728945524,
+      "initial_evaluation_ms": 0.004998000804334879,
+      "observe_to_decision_ms": 0.0667549975332804,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.0668319989927113,
+        "recovery_evaluation_ms": 0.005529000191017985,
+        "replan_ms": 9.073622997675557,
+        "execution_ms": 10.158691002288833,
+        "recovery_total_ms": 19.454877001408022
+      }
+    },
+    {
+      "trial_index": 16,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.06098100129747763,
+      "initial_evaluation_ms": 0.004161000106250867,
+      "observe_to_decision_ms": 0.0651420014037285,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.07637599992449395,
+        "recovery_evaluation_ms": 0.00612599978921935,
+        "replan_ms": 9.629916999983834,
+        "execution_ms": 10.119094997207867,
+        "recovery_total_ms": 19.96603500083438
+      }
+    },
+    {
+      "trial_index": 17,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.07245399683597498,
+      "initial_evaluation_ms": 0.004112000169698149,
+      "observe_to_decision_ms": 0.07656599700567313,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06884800313855521,
+        "recovery_evaluation_ms": 0.006326998118311167,
+        "replan_ms": 9.30245700510568,
+        "execution_ms": 10.567025001364527,
+        "recovery_total_ms": 20.153674002358457
+      }
+    },
+    {
+      "trial_index": 18,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05404199691838585,
+      "initial_evaluation_ms": 0.004607001756085083,
+      "observe_to_decision_ms": 0.05864899867447093,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06600399865419604,
+        "recovery_evaluation_ms": 0.006317000952549279,
+        "replan_ms": 9.829491998971207,
+        "execution_ms": 10.216957998636644,
+        "recovery_total_ms": 20.263452002836857
+      }
+    },
+    {
+      "trial_index": 19,
+      "state_at_grasp": "RECOVERABLE",
+      "initial_perception_ms": 0.05938100002822466,
+      "initial_evaluation_ms": 0.004397999873617664,
+      "observe_to_decision_ms": 0.06377899990184233,
+      "recovery": {
+        "verified": true,
+        "recovery_attempts_used": 2,
+        "recovery_observation_ms": 0.06519000089610927,
+        "recovery_evaluation_ms": 0.005694997526006773,
+        "replan_ms": 9.163185000943486,
+        "execution_ms": 10.2647639978386,
+        "recovery_total_ms": 19.673509999847738
+      }
+    }
+  ],
+  "summary_ms": {
+    "perception_ms": {
+      "p50_ms": 0.058802999774343334,
+      "p95_ms": 0.07897749965195545,
+      "mean_ms": 0.06169579937704839,
+      "max_ms": 0.09107100049732253,
+      "n": 20
+    },
+    "evaluation_ms": {
+      "p50_ms": 0.004373501724330708,
+      "p95_ms": 0.006288101576501505,
+      "mean_ms": 0.0046491006287396885,
+      "max_ms": 0.008816998160909861,
+      "n": 20
+    },
+    "observe_to_decision_ms": {
+      "p50_ms": 0.06317899897112511,
+      "p95_ms": 0.08526560122845696,
+      "mean_ms": 0.06634490000578808,
+      "max_ms": 0.09988799865823239,
+      "n": 20
+    },
+    "replan_ms": {
+      "p50_ms": 9.08838699979242,
+      "p95_ms": 9.856512998885592,
+      "mean_ms": 9.263691000342078,
+      "max_ms": 10.369911997258896,
+      "n": 20
+    },
+    "recovery_execution_ms": {
+      "p50_ms": 10.205218499322655,
+      "p95_ms": 10.585496901148872,
+      "mean_ms": 10.266838999996253,
+      "max_ms": 10.936462997051422,
+      "n": 20
+    },
+    "recovery_total_ms": {
+      "p50_ms": 19.649018000563956,
+      "p95_ms": 20.299012902614777,
+      "mean_ms": 19.763022900224314,
+      "max_ms": 20.974669998395257,
+      "n": 20
+    }
+  }
+}

@@ -1,0 +1,5076 @@
+{
+  "gate": "G8-H1",
+  "config": {
+    "model": "models/dual_so101_g3.xml",
+    "seed": 42,
+    "n_trials_per_condition": 10
+  },
+  "note": "delay_frames is a proxy for the plan's ms-based delay labels -- this control loop observes at discrete trigger boundaries, not a fixed-rate poll, so wall-clock delay isn't directly expressible.",
+  "conditions": {
+    "baseline": {
+      "config": {
+        "name": "baseline",
+        "delta": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.0,
+        "delay_frames": 0,
+        "drop_frame_count": 0
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 1.0,
+        "safe_stop_rate": 0.0,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    },
+    "displacement_5cm": {
+      "config": {
+        "name": "displacement_5cm",
+        "delta": [
+          0.05,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.0,
+        "delay_frames": 0,
+        "drop_frame_count": 0
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.201574180397627e-05,
+              "shoulder_lift": 0.3738813871163059,
+              "elbow_flex": 0.5112646600998169,
+              "wrist_flex": -0.2558231032351965,
+              "wrist_roll": 0.00036169527719644395
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.049999522929014946,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549184678785525e-05,
+                "grasp_error_m": 0.16376602026819825,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.04999959810775693,
+                  -1.0429201750702466e-06,
+                  0.42989126357068363
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.549198138772572e-05,
+                "grasp_error_m": 0.0024965362881089817,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948102228,
+          "target_error_xy_m": 0.045068419165801094,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 1.0,
+        "safe_stop_rate": 0.0,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    },
+    "displacement_15cm": {
+      "config": {
+        "name": "displacement_15cm",
+        "delta": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.0,
+        "delay_frames": 0,
+        "drop_frame_count": 0
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.167543924444638e-05,
+              "shoulder_lift": 1.1906116357750065,
+              "elbow_flex": -0.5994982124308093,
+              "wrist_flex": -0.31115052165206897,
+              "wrist_roll": 0.000913583229612978
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.14999952292901494,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436590754939257e-05,
+                "grasp_error_m": 0.2459856830137766,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.14999926065822317,
+                  -1.342377000863197e-06,
+                  0.42989095319657955
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.436189382843432e-05,
+                "grasp_error_m": 0.02135697139135123,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948094266,
+          "target_error_xy_m": 0.04506841916568374,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 1.0,
+        "safe_stop_rate": 0.0,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    },
+    "noise_1cm": {
+      "config": {
+        "name": "noise_1cm",
+        "delta": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.01,
+        "delay_frames": 0,
+        "drop_frame_count": 0
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.00867861046268043,
+              "shoulder_lift": 0.723268474121675,
+              "elbow_flex": 0.05748033668073084,
+              "wrist_flex": -0.29398041159320387,
+              "wrist_roll": 0.0008538612756051129
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.10940517009292709,
+                  -0.019511293807923578,
+                  0.4168694251903741
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.700789835153097e-05,
+                "grasp_error_m": 0.2385450208095325,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.1012777387231396,
+                  -0.0031635801793435093,
+                  0.42972286411747107
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.986940950189991e-05,
+                "grasp_error_m": 0.01900505205721084,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948081865,
+          "target_error_xy_m": 0.04506841916548041,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.005731266553948668,
+              "shoulder_lift": 0.7567680154119848,
+              "elbow_flex": 0.042371767256951784,
+              "wrist_flex": -0.2932011414725679,
+              "wrist_roll": 0.00038316557534586083
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09091279169776148,
+                  -0.01991932403259886,
+                  0.4396074500788593
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.349775506427896e-05,
+                "grasp_error_m": 0.22839005483917113,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.10016611083746348,
+                  0.002056620946298419,
+                  0.4220555458393835
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.1411782989632156e-05,
+                "grasp_error_m": 0.009671612078909589,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948083484,
+          "target_error_xy_m": 0.045068419165506225,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.028440950911685848,
+              "shoulder_lift": 0.6656324931180091,
+              "elbow_flex": 0.11971536705844074,
+              "wrist_flex": -0.29133429523074456,
+              "wrist_roll": 0.0014840967407141335
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.11136414687543959,
+                  0.008241497436294478,
+                  0.4356807853634457
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 7.169399829682453e-05,
+                "grasp_error_m": 0.23791445675137574,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0962078363131409,
+                  -0.01018975147813647,
+                  0.43365305475241583
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 7.135631113405759e-05,
+                "grasp_error_m": 0.02626802033387244,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948091143,
+          "target_error_xy_m": 0.04506841916562308,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.01884752535681184,
+              "shoulder_lift": 0.8017922649000324,
+              "elbow_flex": -0.014921575150290575,
+              "wrist_flex": -0.2969513445044854,
+              "wrist_roll": -3.0378851724757477e-05
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.10843854886708189,
+                  -0.0014859288029254207,
+                  0.43251605807755994
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 6.359738933248005e-05,
+                "grasp_error_m": 0.2374383089398062,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.10531622253085493,
+                  0.006897057028959675,
+                  0.4209723791201724
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 7.986546590881294e-05,
+                "grasp_error_m": 0.018337275371191734,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948078937,
+          "target_error_xy_m": 0.045068419165438335,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.012356394411447234,
+              "shoulder_lift": 0.7065864127710081,
+              "elbow_flex": 0.07600071138999881,
+              "wrist_flex": -0.29322953988310974,
+              "wrist_roll": 0.0009674051670432912
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.10730135616873891,
+                  -0.011693997091349707,
+                  0.4155965512636328
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.0562184189557895e-05,
+                "grasp_error_m": 0.2378001856698315,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09976681433038755,
+                  -0.004478941308364914,
+                  0.4307721172038461
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.346675009404906e-05,
+                "grasp_error_m": 0.021385703140737056,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948086555,
+          "target_error_xy_m": 0.04506841916555464,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.012859957392348671,
+              "shoulder_lift": 0.6698195094526371,
+              "elbow_flex": 0.13684279328660676,
+              "wrist_flex": -0.28905907646576434,
+              "wrist_roll": 0.0009564463758724233
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.08059882534096877,
+                  -0.01410613329839664,
+                  0.42188533304916237
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.400429693325314e-05,
+                "grasp_error_m": 0.22184699395993562,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09265848063336779,
+                  -0.004569219358731547,
+                  0.4279828299022062
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 6.908952599144613e-05,
+                "grasp_error_m": 0.007187973461674095,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.0714600994809548,
+          "target_error_xy_m": 0.04506841916569409,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.017237167670550523,
+              "shoulder_lift": 0.7564612667787136,
+              "elbow_flex": -0.004143113854032743,
+              "wrist_flex": -0.29917777711339677,
+              "wrist_roll": 0.0011708252171066023
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.11406510254219569,
+                  0.0016211182085475,
+                  0.41970509304402676
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.939196466936894e-05,
+                "grasp_error_m": 0.2383348748729678,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.10860404151850252,
+                  -0.006394909757884319,
+                  0.4340283205578897
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 6.0853933211676156e-05,
+                "grasp_error_m": 0.015364349821834943,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948081686,
+          "target_error_xy_m": 0.04506841916547988,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.04599211723951919,
+              "shoulder_lift": 0.6761576507032097,
+              "elbow_flex": 0.12345952242704034,
+              "wrist_flex": -0.29021589908085327,
+              "wrist_roll": 0.002074858831327482
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.08480586058051813,
+                  0.001200692311620568,
+                  0.43098162877706475
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.9495686411710464e-05,
+                "grasp_error_m": 0.22273113305043074,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09411945909845296,
+                  -0.016379486165104137,
+                  0.42918912673231263
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 7.472229558602305e-05,
+                "grasp_error_m": 0.015473797799420397,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948090894,
+          "target_error_xy_m": 0.045068419165621376,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.02120972320768425,
+              "shoulder_lift": 0.7404470880891674,
+              "elbow_flex": 0.02400694828522527,
+              "wrist_flex": -0.2968166572107106,
+              "wrist_roll": -0.00013619616533685293
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.08612657748309717,
+                  0.016657942375198638,
+                  0.4279819050869758
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.860535957774333e-05,
+                "grasp_error_m": 0.22617281871262512,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.10534299500608207,
+                  0.007764509845496892,
+                  0.43233883376829163
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.0015077168789975e-05,
+                "grasp_error_m": 0.013187086382856823,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948088694,
+          "target_error_xy_m": 0.045068419165588826,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.050288056377832485,
+              "shoulder_lift": 0.6768821779400265,
+              "elbow_flex": 0.13375011826444233,
+              "wrist_flex": -0.2888687236014811,
+              "wrist_roll": -0.0011627909574509383
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.11252424642613126,
+                  -0.0032399081361218288,
+                  0.4188747826913908
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.3945133054849046e-05,
+                "grasp_error_m": 0.2381660892915127,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09201219108913045,
+                  0.017773495151376613,
+                  0.4263872671747105
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 7.309718707794074e-05,
+                "grasp_error_m": 0.029500403688399606,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948096205,
+          "target_error_xy_m": 0.04506841916570333,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 1.0,
+        "safe_stop_rate": 0.0,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    },
+    "noise_2cm": {
+      "config": {
+        "name": "noise_2cm",
+        "delta": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.02,
+        "delay_frames": 0,
+        "drop_frame_count": 0
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.01733434908056474,
+              "shoulder_lift": 0.7340043419064806,
+              "elbow_flex": 0.043545264705828465,
+              "wrist_flex": -0.2947517357357878,
+              "wrist_roll": 0.001151771812963403
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.11881081725683923,
+                  -0.03902164569446194,
+                  0.4038476301217509
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.5375498007254946e-05,
+                "grasp_error_m": 0.24093208546101358,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.10255631446667686,
+                  -0.006325859858080908,
+                  0.4295553069390827
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.480214035331605e-05,
+                "grasp_error_m": 0.020005007951659673,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948082666,
+          "target_error_xy_m": 0.04506841916549515,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.011414725427548802,
+              "shoulder_lift": 0.8022268455355062,
+              "elbow_flex": 0.01177406772566248,
+              "wrist_flex": -0.2941190702375297,
+              "wrist_roll": 0.00021233191282457562
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.08182606046650799,
+                  -0.039837706143812504,
+                  0.4493236798987213
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 6.360042458083654e-05,
+                "grasp_error_m": 0.21793660066487686,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.10033261867550682,
+                  0.00411363563661135,
+                  0.41421940373799365
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 7.274911385228625e-05,
+                "grasp_error_m": 0.022378738623078445,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948075985,
+          "target_error_xy_m": 0.04506841916539147,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.057484821313747075,
+              "shoulder_lift": 0.6214922222107448,
+              "elbow_flex": 0.1628391534829568,
+              "wrist_flex": -0.2879869208653744,
+              "wrist_roll": 0.002437376435003424
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": false,
+            "outcome": "SAFE_STOP",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.12272877082186423,
+                  0.01648393679397417,
+                  0.44147035046789407
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.815265072756306e-05,
+                "grasp_error_m": 0.23954986028703223,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09241605412547588,
+                  -0.0203785134782433,
+                  0.43741452617374105
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.157893831379783e-05,
+                "grasp_error_m": 0.04135053108143117,
+                "result": "GRASP_VERIFY_FAILED"
+              }
+            ]
+          },
+          "task_success": false,
+          "safe_stopped": true,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.03710448807986428,
+              "shoulder_lift": 0.8963520768647373,
+              "elbow_flex": -0.10940841160149375,
+              "wrist_flex": -0.3029886966149716,
+              "wrist_roll": -0.0005944356726425938
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": false,
+            "outcome": "SAFE_STOP",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.11687757480514882,
+                  -0.00297091568446563,
+                  0.4351408958961226
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.156396232574767e-05,
+                "grasp_error_m": 0.23843425330839266,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.11063290291136166,
+                  0.013795130027657183,
+                  0.4120533924498616
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 6.326842569354479e-05,
+                "grasp_error_m": 0.03192073121545218,
+                "result": "GRASP_VERIFY_FAILED"
+              }
+            ]
+          },
+          "task_success": false,
+          "safe_stopped": true,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.02476557031224283,
+              "shoulder_lift": 0.7007936234869795,
+              "elbow_flex": 0.08038775060680282,
+              "wrist_flex": -0.29324462812064456,
+              "wrist_roll": 0.0013814836286824299
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.11460318940846287,
+                  -0.0233870522613142,
+                  0.40130188226826835
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 6.748853022312166e-05,
+                "grasp_error_m": 0.23947476806074486,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09953409392047609,
+                  -0.008956917605149311,
+                  0.4316526928254872
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.1673639510858386e-05,
+                "grasp_error_m": 0.025817578920734326,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948087939,
+          "target_error_xy_m": 0.04506841916557466,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.02630233082589767,
+              "shoulder_lift": 0.6295411797302155,
+              "elbow_flex": 0.19784365152421193,
+              "wrist_flex": -0.28303066593667997,
+              "wrist_roll": 0.0013813121275351443
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.06119812775292259,
+                  -0.02821132467540807,
+                  0.41387944583932745
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.19830317905334e-05,
+                "grasp_error_m": 0.2008137137244128,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.08531745944072755,
+                  -0.009137570644023329,
+                  0.42607413954123247
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 4.8838303335054255e-05,
+                "grasp_error_m": 0.017245977304939725,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948108081,
+          "target_error_xy_m": 0.04506841916589357,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.03371999595349426,
+              "shoulder_lift": 0.805874551163888,
+              "elbow_flex": -0.08679323385598844,
+              "wrist_flex": -0.3055042758656794,
+              "wrist_roll": 0.0017654329873938873
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.12813068215537643,
+                  0.003243178338480211,
+                  0.40951896582905617
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 8.120272097240993e-05,
+                "grasp_error_m": 0.23936063216566109,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.11720854088665683,
+                  -0.012788803546030805,
+                  0.4381652753252962
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.8797093685859114e-05,
+                "grasp_error_m": 0.028030607500628423,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948080966,
+          "target_error_xy_m": 0.04506841916547066,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": 0.09336634902802729,
+              "shoulder_lift": 0.6464175971259338,
+              "elbow_flex": 0.16572960206474754,
+              "wrist_flex": -0.286349287191324,
+              "wrist_roll": 0.0036449487306441947
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": false,
+            "outcome": "SAFE_STOP",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.06961219823202132,
+                  0.0024023265446263473,
+                  0.4320720372951322
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.278412581718011e-05,
+                "grasp_error_m": 0.1998428368211698,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.08823945538506953,
+                  -0.03275795272423893,
+                  0.4284869766371647
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.7529446591780474e-05,
+                "grasp_error_m": 0.03699095708766125,
+                "result": "GRASP_VERIFY_FAILED"
+              }
+            ]
+          },
+          "task_success": false,
+          "safe_stopped": true,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.04175279172660518,
+              "shoulder_lift": 0.7709290507917025,
+              "elbow_flex": -0.026650034797117368,
+              "wrist_flex": -0.3008279543850356,
+              "wrist_roll": -0.0008021714590016774
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.07225363203717938,
+                  0.03331682667178249,
+                  0.4260725899149543
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 9.045285366001356e-05,
+                "grasp_error_m": 0.2123850223758457,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.11068642416472094,
+                  0.015529928498030957,
+                  0.4347860765681047
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 7.160765925058283e-05,
+                "grasp_error_m": 0.018522552503616667,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948086227,
+          "target_error_xy_m": 0.04506841916555168,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -0.10258487737128039,
+              "shoulder_lift": 0.6501900915007921,
+              "elbow_flex": 0.18367931654796987,
+              "wrist_flex": -0.2840444045341777,
+              "wrist_roll": -0.0029396535890871527
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": false,
+            "outcome": "SAFE_STOP",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.12504896992324757,
+                  -0.006478874350858446,
+                  0.4078583451237842
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 6.10448134451914e-05,
+                "grasp_error_m": 0.2392058142955646,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.08402484002791269,
+                  0.03554800627249106,
+                  0.4228831685589378
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 5.577875229690405e-05,
+                "grasp_error_m": 0.053181204877674276,
+                "result": "GRASP_VERIFY_FAILED"
+              }
+            ]
+          },
+          "task_success": false,
+          "safe_stopped": true,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 0.6,
+        "safe_stop_rate": 0.4,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    },
+    "delay_50ms_proxy": {
+      "config": {
+        "name": "delay_50ms_proxy",
+        "delta": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.0,
+        "delay_frames": 1,
+        "drop_frame_count": 0
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 1.0,
+        "safe_stop_rate": 0.0,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    },
+    "delay_100ms_proxy": {
+      "config": {
+        "name": "delay_100ms_proxy",
+        "delta": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.0,
+        "delay_frames": 2,
+        "drop_frame_count": 0
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.067852316156172e-05,
+              "shoulder_lift": 0.7128084072719274,
+              "elbow_flex": 0.0710317752948489,
+              "wrist_flex": -0.29326099346474177,
+              "wrist_roll": 0.0005539357135018524
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.003213624111017507,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084128,
+          "target_error_xy_m": 0.045068419165518334,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 1.0,
+        "safe_stop_rate": 0.0,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    },
+    "dropped_frame": {
+      "config": {
+        "name": "dropped_frame",
+        "delta": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "noise_std": 0.0,
+        "delay_frames": 0,
+        "drop_frame_count": 1
+      },
+      "trials": [
+        {
+          "trial_index": 0,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 1,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 2,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 3,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 4,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 5,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 6,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 7,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 8,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        },
+        {
+          "trial_index": 9,
+          "state_at_grasp": "RECOVERABLE",
+          "recovery": {
+            "stale_target": {
+              "shoulder_pan": 0.0,
+              "shoulder_lift": -1.0,
+              "elbow_flex": 1.3,
+              "wrist_flex": -0.2,
+              "wrist_roll": 0.0
+            },
+            "fresh_target": {
+              "shoulder_pan": -4.0473638868025536e-05,
+              "shoulder_lift": 0.712807769021236,
+              "elbow_flex": 0.07103206672778088,
+              "wrist_flex": -0.29326101618852735,
+              "wrist_roll": 0.0005539423271137207
+            },
+            "stale_action_executed": false,
+            "fresh_action_executed": true,
+            "reobservations_used": 2,
+            "recovery_attempts_used": 2,
+            "verified": true,
+            "outcome": "NORMAL",
+            "attempts_log": [
+              {
+                "attempt": 1,
+                "observed_pose": [
+                  0.09999952292901496,
+                  -9.419213852112088e-07,
+                  0.4298912202589973
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550581722019054e-05,
+                "grasp_error_m": 0.2355959279231083,
+                "result": "GRASP_VERIFY_FAILED"
+              },
+              {
+                "attempt": 2,
+                "observed_pose": [
+                  0.0999995421503482,
+                  -1.0159697378324184e-06,
+                  0.42989136579048315
+                ],
+                "evaluated_state": "RECOVERABLE",
+                "ik_converged": true,
+                "ik_error_m": 3.550563106189249e-05,
+                "grasp_error_m": 0.0032136131943884066,
+                "result": "VERIFIED"
+              }
+            ]
+          },
+          "task_success": true,
+          "target_error_3d_m": 0.07146009948084223,
+          "target_error_xy_m": 0.04506841916551984,
+          "safe_stopped": false,
+          "stale_action_executed": false,
+          "valid_outcome": true,
+          "recovery_attempts_used": 2
+        }
+      ],
+      "summary": {
+        "n_trials": 10,
+        "task_success_rate": 1.0,
+        "safe_stop_rate": 0.0,
+        "stale_action_execution_rate": 0.0,
+        "mean_recovery_attempts": 2.0,
+        "all_outcomes_valid": true,
+        "condition_pass": true
+      }
+    }
+  },
+  "g8_h1_pass": true
+}
