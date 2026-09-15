@@ -4,6 +4,9 @@
 
 ![RoboGuardian: governed execution under world change](presentation/images/slide-01.png)
 
+[🎥 Pitch Video (2:40)](presentation/roboguardian_pitch.mp4) | [📑 Slide Deck v2 (PDF)](presentation/RoboGuardian_Governed_Execution_Deck_v2.pdf) | [🖼️ Visual Deck v3 (PDF)](presentation/RoboGuardian_Governed_Execution_v3.pdf) | [🧪 Reproduce G6](#quick-start)
+
+
 A reference implementation of a self-healing robotic control loop.
 Built on MuJoCo + OpenVINO in a **bimanual dual SO-101 simulation
 environment**; the current evidence chain exercises the left-arm
@@ -28,6 +31,13 @@ Arm B (disturbance, no recovery): 0/10 success
 Arm C (disturbance + RoboGuardian): 10/10 success
 
 ![Head-to-head reliability: A=10/10, B=0/10, C=10/10 with zero stale actions](presentation/images/slide-06.png)
+
+## ⚡ Intel OpenVINO in the Critical Path
+
+* **Model:** Custom tiny CNN plate-displacement estimator (~146K params); mean position error ≈0.7 cm, worst 2.4 cm at workspace edge (G7).
+* **Inference engine:** Intel OpenVINO Runtime on CPU; benchmark vs ONNX Runtime in `results/g7_openvino.json`.
+* **Latency budget:** P50 < 2 ms on CPU (OpenVINO 1.2 ms vs ONNX Runtime 0.5 ms; OpenVINO = 0.44× of ONNX on this tiny model — no speedup claimed), keeping perception inside the control budget for pre-action state verification.
+* **Role:** Supplies the fresh observation that gates every action boundary; stale targets are never executed (Section 18).
 
 ## Gates
 
