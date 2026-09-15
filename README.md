@@ -2,6 +2,8 @@
 
 > **Governed execution is more resilient than open-loop execution when the world changes.**
 
+![RoboGuardian: governed execution under world change](presentation/images/slide-01.png)
+
 A reference implementation of a self-healing robotic control loop.
 Built on MuJoCo + OpenVINO in a **bimanual dual SO-101 simulation
 environment**; the current evidence chain exercises the left-arm
@@ -24,6 +26,8 @@ controlled simulation evidence — not a formal proof.
 Arm A (no disturbance): 10/10 success
 Arm B (disturbance, no recovery): 0/10 success
 Arm C (disturbance + RoboGuardian): 10/10 success
+
+![Head-to-head reliability: A=10/10, B=0/10, C=10/10 with zero stale actions](presentation/images/slide-06.png)
 
 ## Gates
 

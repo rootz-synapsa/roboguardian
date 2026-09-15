@@ -8,3 +8,4 @@ __pycache__/
 # Ignore transient/raw artifacts later only if needed.
 results/repair_log.txt
 vendor/
+presentation/deck_v3_png/
