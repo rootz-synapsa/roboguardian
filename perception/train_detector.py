@@ -86,7 +86,14 @@ def main() -> int:
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--out-onnx", default="results/plate_detector.onnx")
     parser.add_argument("--out-norm", default="results/plate_detector_norm.json")
+    parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
+    # Deterministic training (G8-H3 reproducibility)
+    import random as _random
+    _random.seed(args.seed)
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+
 
     dataset = PlateDataset(args.data)
     n_val = max(1, len(dataset) // 10)
