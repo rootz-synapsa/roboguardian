@@ -7,5 +7,13 @@ __pycache__/
 # Keep gate evidence in git.
 # Ignore transient/raw artifacts later only if needed.
 results/repair_log.txt
-vendor/
+vendor/*
+!vendor/SO-ARM100/
+vendor/SO-ARM100/*
+!vendor/SO-ARM100/Simulation/
+vendor/SO-ARM100/Simulation/*
+!vendor/SO-ARM100/Simulation/SO101/
+vendor/SO-ARM100/Simulation/SO101/*
+!vendor/SO-ARM100/Simulation/SO101/assets/
+!vendor/SO-ARM100/Simulation/SO101/assets/*.stl
 presentation/deck_v3_png/
