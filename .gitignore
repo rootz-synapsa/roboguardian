@@ -17,6 +17,11 @@ vendor/SO-ARM100/Simulation/SO101/*
 !vendor/SO-ARM100/Simulation/SO101/README.md
 !vendor/SO-ARM100/Simulation/SO101/assets/
 !vendor/SO-ARM100/Simulation/SO101/assets/*.stl
+<<<<<<< HEAD
 
+=======
+!vendor/SO-ARM100/Simulation/README.md
+!vendor/SO-ARM100/Simulation/SO101/README.md
+>>>>>>> 07a82dc (chore(G8): audit remediation — remove backups, add SIM_TO_REAL, seed training, align H1 audit schema)
 presentation/deck_v3_png/
 vendor/SO-ARM100/
