@@ -1,9 +1,12 @@
 __pycache__/
+*.pyc
+.env
+.venv/
+*.log
 
-# Keep gate evidence in git.
-# Ignore transient/raw artifacts later only if needed.
 results/repair_log.txt
 
+# Keep only the official SO-101 simulation assets required by the models.
 vendor/*
 !vendor/SO-ARM100/
 vendor/SO-ARM100/*
@@ -11,17 +14,23 @@ vendor/SO-ARM100/*
 !vendor/SO-ARM100/README.md
 !vendor/SO-ARM100/Simulation/
 vendor/SO-ARM100/Simulation/*
-!vendor/SO-ARM100/Simulation/README.md
 !vendor/SO-ARM100/Simulation/SO101/
 vendor/SO-ARM100/Simulation/SO101/*
-!vendor/SO-ARM100/Simulation/SO101/README.md
 !vendor/SO-ARM100/Simulation/SO101/assets/
-!vendor/SO-ARM100/Simulation/SO101/assets/*.stl
-<<<<<<< HEAD
+vendor/SO-ARM100/Simulation/SO101/assets/*
 
-=======
-!vendor/SO-ARM100/Simulation/README.md
-!vendor/SO-ARM100/Simulation/SO101/README.md
->>>>>>> 07a82dc (chore(G8): audit remediation — remove backups, add SIM_TO_REAL, seed training, align H1 audit schema)
+!vendor/SO-ARM100/Simulation/SO101/assets/base_motor_holder_so101_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/base_so101_v2.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/motor_holder_so101_base_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/motor_holder_so101_wrist_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/moving_jaw_so101_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/rotation_pitch_so101_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/sts3215_03a_no_horn_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/sts3215_03a_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/under_arm_so101_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/upper_arm_so101_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/waveshare_mounting_plate_so101_v2.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/wrist_roll_follower_so101_v1.stl
+!vendor/SO-ARM100/Simulation/SO101/assets/wrist_roll_pitch_so101_v2.stl
+
 presentation/deck_v3_png/
-vendor/SO-ARM100/
